@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenBite | Nutrition Calculator</title>
+  <link rel="stylesheet" href="./GreenBitee/css/calculator.css">
+  <link rel="icon" href="./GreenBitee/image/" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">GREEN<span>BITE</span></div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./recipes.html">Healthy Recipes</a></li>
+        <li><a href="./calculator.html" class="active">Nutrition Calculator</a></li>
+        <li><a href="./workout.html">Workouts</a></li>
+        <li><a href="./mindfulness.html">Mindfulness</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Nutrition Calculator</h1>
+    <p>Track your calories and macros with ease</p>
+  </section>
+
+  <!-- Calculator Form -->
+  <section class="calculator">
+    <h2>Enter Your Meal Details</h2>
+    <form id="nutrition-form">
+      <label for="food">Food Item</label>
+      <input type="text" id="food" placeholder="e.g. Apple">
+
+      <label for="quantity">Quantity (grams)</label>
+      <input type="number" id="quantity" placeholder="e.g. 100">
+
+      <button type="submit">Calculate</button>
+    </form>
+
+  \
+    <div class="results">
+      <h3>Nutrition Breakdown</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Nutrient</th>
+            <th>Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Calories</td><td>--</td></tr>
+          <tr><td>Protein</td><td>-- g</td></tr>
+          <tr><td>Carbs</td><td>-- g</td></tr>
+          <tr><td>Fats</td><td>-- g</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="newsletter">
+      <p>&copy;Subscribe to our Newsletter</p>
+      <form>
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </footer>
+
+  <script src="../GreenBitee (1)/GreenBitee/js/utils.js" defer></script>
+  <script src="../GreenBitee (1)/GreenBitee/js/calculator.js" defer></script>
+  <script src="../GreenBitee (1)/GreenBitee/js/footer.js" defer></script>
+</body>
+</html>

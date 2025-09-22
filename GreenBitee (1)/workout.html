@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenBite | Workouts</title>
+  <link rel="stylesheet" href="./GreenBitee/css/workout.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">GREEN<span>BITE</span></div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./recipes.html">Healthy Recipes</a></li>
+        <li><a href="./calculator.html">Nutrition Calculator</a></li>
+        <li><a href="./workout.html" class="active">Workouts</a></li>
+        <li><a href="./mindfulness.html">Mindfulness</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Workout Generator</h1>
+    <p>Choose your preferences and let us build a workout plan</p>
+  </section>
+
+  Workout Form
+  <section class="workout-form">
+    <h2>Customize Your Workout</h2>
+    <form id="workout-generator">
+      <!-- Body part -->
+      <label for="body-part">Select Body Part</label>
+      <select id="body-part" required>
+        <option value="arms">Arms</option>
+        <option value="legs">Legs</option>
+        <option value="fullbody">Full Body</option>
+        <option value="core">Core</option>
+      </select>
+
+      <!-- Equipment -->
+      <label for="equipment">Select Equipment</label>
+      <select id="equipment" required>
+        <option value="none">None</option>
+        <option value="dumbbells">Dumbbells</option>
+        <option value="resistance-band">Resistance Band</option>
+      </select>
+
+      <button type="submit">Generate Workout</button>
+    </form>
+  </section>
+
+  <!-- Generated Plan -->
+  <section class="workout-plan">
+    <h2>Your Workout Plan</h2>
+    <div id="plan-container">
+      <p>No workout generated yet. Select options above.</p>
+    </div>
+  </section>
+
+  <!-- Timer -->
+  <section class="timer-section">
+    <h2>Exercise Timer</h2>
+    <div class="timer">
+      <span id="countdown">00:00</span>
+    </div>
+    <button id="start-timer">Start Timer</button>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="newsletter">
+      <p>Subscribe to our Newsletter</p>
+      <form>
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+    <p>&copy; 2025 GreenBite. All rights reserved.</p>
+  </footer>
+
+  <script src="../GreenBitee (1)/GreenBitee/js/utils.js" defer></script>
+  <script src="../GreenBitee (1)/GreenBitee/js/workout.js" defer></script>
+  <script src="../GreenBitee (1)/GreenBitee/js/footer.js" defer></script>
+</body>
+</html>

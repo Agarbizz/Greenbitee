@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenBite | Healthy Recipes</title>
+  <link rel="stylesheet" href="./GreenBitee/css/recipes.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">GREEN<span>BITE</span></div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./recipes.html" class="active">Healthy Recipes</a></li>
+        <li><a href="./calculator.html">Nutrition Calculator</a></li>
+        <li><a href="./workout.html">Workouts</a></li>
+        <li><a href="./mindfulness.html">Mindfulness</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Healthy Recipes</h1>
+    <p>Nutritious, simple, and tasty meals to fuel your day</p>
+  </section>
+
+  <!-- Search & Filter (UI only) -->
+  <section class="search-filter">
+    <input type="text" placeholder="Search recipes...">
+    <select>
+      <option>All Categories</option>
+      <option>Salads</option>
+      <option>Smoothies</option>
+      <option>Breakfast</option>
+      <option>Wraps</option>
+    </select>
+  </section>
+
+  <!-- Recipes Section -->
+  <section class="recipes">
+    <h2>Explore Our Recipes</h2>
+    <div class="recipe-grid">
+      <div class="recipe-card">
+        <img src="/GreenBitee (1)/GreenBitee/image/avocado-toast-egg.jpg" alt="Salad">
+        <h3>🥗 Fresh Green Salad</h3>
+        <p>A crunchy mix of greens, cucumbers, and a light vinaigrette.</p>
+      </div>
+      <div class="recipe-card">
+        <img src="GreenBitee/image/Smoothie.jpg" alt="Smoothie">
+        <h3>🍓 Berry Smoothie</h3>
+        <p>Refreshing blend of strawberries, blueberries, and yogurt.</p>
+      </div>
+      <div class="recipe-card">
+        <img src="GreenBitee/image/Oats.jpg" alt="Oats">
+        <h3>🥣 Overnight Oats</h3>
+        <p>Oats soaked in almond milk topped with fruits & nuts.</p>
+      </div>
+      <div class="recipe-card">
+        <img src="GreenBitee/image/VeggieWrap.jpg" alt="Wrap">
+        <h3>🌯 Veggie Wrap</h3>
+        <p>Whole wheat wrap stuffed with fresh vegetables & hummus.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="newsletter">
+      <p>Subscribe to our Newsletter</p>
+      <form id="newsletter-form">
+        <input type="email" id="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+    <p>&copy; 2025 GreenBite. All rights reserved.</p>
+  </footer>
+
+  <script src="../GreenBitee (1)/GreenBitee/js/utils.js" defer></script>
+  <script src="../GreenBitee (1)/GreenBitee/js/recipes.js" defer></script>
+  <script src="../GreenBitee (1)/GreenBitee/js/footer.js" defer></script>
+</body>
+</html>
