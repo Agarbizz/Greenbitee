@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenBite | Mindfulness</title>
+  <link rel="stylesheet" href="./GreenBitee/css/mindfulness.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">GREEN<span>BITE</span></div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./recipes.html">Healthy Recipes</a></li>
+        <li><a href="./calculator.html">Nutrition Calculator</a></li>
+        <li><a href="./workout.html">Workouts</a></li>
+        <li><a href="./mindfulness.html" class="active">Mindfulness</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Mindfulness & Meditation</h1>
+    <p>Breathe, relax, and focus on your inner calm</p>
+  </section>
+
+  <!-- Breathing Exercise -->
+  <section class="breathing">
+    <h2>Guided Breathing</h2>
+    <div class="breathing-circle"></div>
+    <p id="breathing-text">Inhale...</p>
+  </section>
+
+  <!-- Timer Tool -->
+  <section class="timer-tool">
+    <h2>Meditation Timer</h2>
+    <div class="timer-display">25:00</div>
+    <div class="timer-controls">
+      <button>Start</button>
+      <button>Pause</button>
+      <button>Reset</button>
+    </div>
+  </section>
+
+  <!-- Ambient Sounds -->
+  <section class="sounds">
+    <h2>Ambient Sounds</h2>
+    <div class="sound-buttons">
+      <button>🌊 Ocean</button>
+      <button>🌧 Rain</button>
+      <button>🎶 Soft Music</button>
+    </div>
+  </section>
+
+  <!-- Session Tracker -->
+  <section class="tracker">
+    <h2>Completed Sessions</h2>
+    <p id="session-count">You have completed 0 sessions</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="newsletter">
+      <p>Subscribe to our Newsletter</p>
+      <form>
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+    <p>&copy; 2025 GreenBite. All rights reserved.</p>
+  </footer>
+
+  <script src="../js/utils.js" defer></script>
+  <script src="../js/mindfulness.js" defer></script>
+  <script src="../js/footer.js" defer></script>
+ </body>
+ </html>
