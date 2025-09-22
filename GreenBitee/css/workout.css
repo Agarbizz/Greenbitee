@@ -1,0 +1,192 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #fdfdf8;
+  color: #111;
+        background: url("../image/work2.jpg") no-repeat center center/cover;
+
+}
+
+/* Header */
+header {
+  background: #16a34a;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 4px solid #000;
+}
+.logo { font-size: 2rem; font-weight: 700; color: #fff; }
+.logo span {
+  color: #000;
+  background: #bbf7d0;
+  padding: 0.1rem 0.4rem;
+  border: 3px solid #000;
+}
+.nav-links { list-style: none; display: flex; gap: 1.5rem; }
+.nav-links a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #fff;
+  padding: 0.4rem 0.6rem;
+  border: 3px solid transparent;
+}
+.nav-links a:hover,
+.nav-links a.active {
+  border: 3px solid #000;
+  background: #bbf7d0;
+  color: #000;
+}
+.hamburger { display: none; flex-direction: column; cursor: pointer; }
+.hamburger span {
+  background: #000;
+  height: 3px;
+  width: 25px;
+  margin: 4px 0;
+  border-radius: 2px;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  border-bottom: 4px solid #000;
+  background: #ecfdf5;
+      background: url("../image/Work.jpg") no-repeat center center/cover;
+
+}
+.hero h1 { font-size: 2.5rem; }
+.hero p { font-size: 1.1rem; margin-top: 0.5rem; color: #065f46; }
+
+/* Workout Form */
+.workout-form {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2rem;
+  border: 3px solid #000;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 6px 6px 0 #16a34a;
+}
+.workout-form h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.workout-form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+.workout-form select {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.3rem;
+  border: 3px solid #000;
+  border-radius: 8px;
+}
+.workout-form button {
+  margin-top: 1.5rem;
+  width: 100%;
+  padding: 0.8rem;
+  border: 3px solid #000;
+  background: #16a34a;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.workout-form button:hover {
+  background: #065f46;
+  transform: scale(1.05);
+}
+
+/* Workout Plan */
+.workout-plan {
+  max-width: 700px;
+  margin: 3rem auto;
+  text-align: center;
+}
+#plan-container {
+  margin-top: 1rem;
+  padding: 1.5rem;
+  border: 3px solid #000;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 6px 6px 0 #16a34a;
+}
+
+/* Timer */
+.timer-section {
+  text-align: center;
+  margin: 3rem auto;
+  max-width: 500px;
+}
+.timer {
+  font-size: 3rem;
+  font-weight: bold;
+  border: 3px solid #000;
+  padding: 1.5rem;
+  border-radius: 12px;
+  display: inline-block;
+  margin-bottom: 1rem;
+  box-shadow: 6px 6px 0 #16a34a;
+}
+#start-timer {
+  padding: 0.8rem 1.5rem;
+  border: 3px solid #000;
+  background: #16a34a;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+#start-timer:hover {
+  background: #065f46;
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+  border-top: 4px solid #16a34a;
+}
+
+.newsletter button {
+  padding: 0.6rem 1.2rem;
+  border: 3px solid #000;
+  background: #16a34a;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.newsletter button:hover {
+  background: #065f46;
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+  header { position: relative; }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #16a34a;
+    flex-direction: column;
+    gap: 0;
+    padding: 0.75rem 1rem;
+    border-bottom: 4px solid #000;
+    z-index: 1000;
+  }
+  .nav-links li { margin: 0.25rem 0; }
+  header.open .nav-links { display: flex; }
+  .hamburger { display: flex; }
+}

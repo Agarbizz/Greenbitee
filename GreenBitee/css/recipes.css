@@ -1,0 +1,214 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #fdfdf8;
+  color: #111;
+
+}
+
+/* Header (same style as home) */
+header {
+  background: #16a34a;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 4px solid #000;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+}
+.logo span {
+  color: #000;
+  background: #bbf7d0;
+  padding: 0.1rem 0.4rem;
+  border: 3px solid #000;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-links a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #fff;
+  padding: 0.4rem 0.6rem;
+  border: 3px solid transparent;
+  transition: all 0.3s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+  border: 3px solid #000;
+  background: #bbf7d0;
+  color: #000;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+.hamburger span {
+  background: #000;
+  height: 3px;
+  width: 25px;
+  margin: 4px 0;
+  border-radius: 2px;
+}
+
+/* Search & Filter UI */
+.search-filter {
+  text-align: center;
+  margin: 2rem;
+    background: url("../image/BG.jpg") no-repeat center center/cover;
+}
+.search-filter input,
+.search-filter select {
+  padding: 0.6rem;
+  border: 3px solid #000;
+  border-radius: 8px;
+  margin: 0.5rem;
+  font-size: 1rem;
+}
+
+/* Clear Filters button */
+.search-filter .clear-filters-btn {
+  padding: 0.6rem;
+  border: 3px solid #000;
+  border-radius: 8px;
+  margin: 0.5rem;
+  font-size: 1rem;
+
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  border-bottom: 4px solid #000;
+  background: #ecfdf5;
+    background: url("../image/BG.jpg") no-repeat center center/cover;
+}
+.hero h1 {
+  font-size: 2.5rem;
+}
+.hero p {
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  color: #065f46;
+}
+
+/* Recipes Section */
+.recipes {
+  padding: 3rem 2rem;
+    background: url("../image/bgc.jpg") no-repeat center center/cover;
+}
+.recipes h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.recipe-card {
+  border: 3px solid #000;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 6px 6px 0 #16a34a;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.recipe-card img {
+  width: 100%;
+  border-bottom: 3px solid #000;
+  /* Reserve space to avoid layout shift during image load */
+  aspect-ratio: 17 / 15;
+  object-fit: cover;
+  display: block;
+}
+.recipe-card h3 {
+  margin: 1rem;
+  font-size: 1.2rem;
+}
+.recipe-card p {
+  margin: 0 1rem 1rem;
+  font-size: 0.95rem;
+}
+.recipe-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 10px 10px 0 #000;
+}
+
+/* Footer (same style as home) */
+footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+  border-top: 4px solid #16a34a;
+}
+.footer-links {
+  margin-bottom: 1rem;
+}
+.footer-links a {
+  margin: 0 0.8rem;
+  color: #bbf7d0;
+  font-weight: 600;
+  text-decoration: none;
+}
+.footer-links a:hover {
+  color: #fff;
+}
+.newsletter {
+  margin-bottom: 1rem;
+}
+.newsletter input {
+  padding: 0.6rem;
+  border: 3px solid #000;
+  border-radius: 20px;
+  margin-right: 0.5rem;
+}
+.newsletter button {
+  padding: 0.6rem 1.2rem;
+  border: 3px solid #000;
+  background: #16a34a;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.newsletter button:hover {
+  background: #065f46;
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+  header { position: relative; }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #16a34a;
+    flex-direction: column;
+    gap: 0;
+    padding: 0.75rem 1rem;
+    border-bottom: 4px solid #000;
+    z-index: 1000;
+  }
+  .nav-links li { margin: 0.25rem 0; }
+  header.open .nav-links { display: flex; }
+  .hamburger { display: flex; }
+}
